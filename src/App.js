@@ -1,8 +1,9 @@
 import './App.css';
+import "./scss/main.scss";
 
 function App() {
   return (
-    <div className="">
+    <div className="page-container">
     </div>
   );
 }

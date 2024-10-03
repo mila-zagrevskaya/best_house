@@ -1,0 +1,62 @@
+%btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  padding: 0 18px;
+  height: 32px;
+  line-height: 32px;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: $transition;
+
+  &:disabled,
+  &.disabled {
+    color: $white;
+    background-color: $cloudy-blue;
+    border-color: $cloudy-blue;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $tomato;
+  border-color: $tomato;
+  color: $white;
+
+  &:hover:not(.disabled):not(:disabled) {
+    background-color: $vermillion;
+    border-color: $vermillion;
+  }
+
+  &:active:not(.disabled):not(:disabled) {
+    background-color: $rusty-red;
+    border-color: $rusty-red;
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $white;
+  border-color: $cloudy-blue;
+  color: $black;
+
+  &:hover:not(.disabled):not(:disabled) {
+    background-color: $cloudy-blue;
+    border-color: $cloudy-blue;
+  }
+
+  &:active:not(.disabled):not(:disabled) {
+    background-color: $cloudy-blue;
+    border-color: $steel;
+  }
+}
