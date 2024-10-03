@@ -1,0 +1,26 @@
+.footer {
+  flex: 0 0 auto;
+  background: $pale-grey;
+}
+
+.footer-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+.footer-row {
+  height: 50px;
+  &:last-child {
+    flex: 0 0 auto;
+    height: 30px;
+    background-color: $black;
+    color: $white;
+  }
+}
